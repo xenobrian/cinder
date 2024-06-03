@@ -15,7 +15,7 @@ body {
 }
 
 .navbarparent > nav {
-    background-color: rgba(43, 94, 81, 0.575);
+    background-color: rgba(43, 94, 81, 0.7);
     box-sizing: border-box; 
     position: fixed;
 
@@ -89,7 +89,7 @@ header > section {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.6);
 }
 
 header > section > main, aside {
@@ -98,7 +98,15 @@ header > section > main, aside {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+
+    font-family: "Montserrat", sans-serif;
 }
+
+header > section > main > h1 {
+    font-size: 4.5em;
+}
+
 article {
     height: 1800px;
     background-color: rgb(29, 202, 23);
