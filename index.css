@@ -9,12 +9,12 @@ body {
     padding-top: 20px;
     height: 2.625em;
     display: flex;
-    align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 999;
 }
 
-nav {
+.navbarparent > nav {
     background-color: rgba(43, 94, 81, 0.575);
     box-sizing: border-box; 
     position: fixed;
@@ -33,7 +33,7 @@ nav {
 
 }
 
-nav > a {
+.navbarparent > nav a {
     box-sizing: border-box;
     text-decoration: none;
     color: white;
@@ -69,16 +69,9 @@ header {
     height: 660px;
 }
 
-header > main {
-    height: inherit;
-    background-color: #cc0018;
-    width: 50%;
-}
-
-header > aside {
-    height: inherit;
-    background-color: #4D4D4D;
-    width: 50%;
+header > video {
+    min-height: inherit;
+    min-width: 100%;
 }
 
 article {
