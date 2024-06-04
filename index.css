@@ -7,29 +7,46 @@ body {
 .navbarparent {
     width: 100%;
     padding-top: 20px;
-    height: 2.625em;
+    height: fit-content;
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     z-index: 999;
 }
 
-.navbarparent > nav {
+.navbarparent > div > h1 {
+    display: block;
+    margin: 0;
+    z-index: 999;
+}
+
+.navbarparent > div:first-child {
+    margin-left: 16px;
+}
+
+.navbarparent > div:last-child {
+    margin-right: 16px;
+}
+
+.navbarparent > .navbar {
     background-color: rgba(43, 71, 94, 0.7);
     box-sizing: border-box; 
-    position: fixed;
 
-    margin: 0;
+    margin: auto;
     padding: 0;    
     width: fit-content; /* 17.5 em = 280px*/
     max-height: 46px;
    
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 12px;
     box-shadow: #8b8d8f 0px 2px 8px;
 }
 
-.navbarparent > nav a {
+.navbarparent > .navbar a {
     box-sizing: border-box;
     text-decoration: none;
     color: white;
@@ -40,23 +57,23 @@ body {
     padding: 16px 12px;
 }
 
-nav:hover {
+.navbar:hover {
     transition: 0.2s;
     transform: scale(1.05);
 }
 
-nav > a:hover {
+.navbar > a:hover {
     color: black;
     background-color: white;
     transition: 0.2s ease-out;
 }
 
-nav > a:first-child:hover {
+.navbar > a:first-child:hover {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 
-nav > :last-child:hover {
+.navbar > :last-child:hover {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
