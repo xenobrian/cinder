@@ -21,16 +21,12 @@ body {
 
     margin: 0;
     padding: 0;    
-    width: 17.5em;
+    width: fit-content; /* 17.5 em = 280px*/
     max-height: 46px;
-    
+   
+    display: inline-block;
     border-radius: 12px;
     box-shadow: #8b8d8f 0px 2px 8px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 
 .navbarparent > nav a {
@@ -111,6 +107,16 @@ article {
     height: 7200px;
     min-width: 100%;
     background-color: #EEF7FF;
+}
+
+article > div {
+    text-align: center;
+}
+
+article > div > img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
 }
 
 footer {
