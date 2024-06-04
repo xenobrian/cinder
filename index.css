@@ -119,8 +119,14 @@ article > div > img {
     margin: auto;
 }
 
+#profile {
+    height: 600px;
+    background-color: #8b8d8f;
+}
+
 footer {
     height: 150px;
     min-width: 100%;
     background-color: #4D869C;
 }
+
