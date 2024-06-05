@@ -137,9 +137,25 @@ article > div > img {
 }
 
 #profile {
-    height: 600px;
+    height: 660px;
     background-color: #8b8d8f;
 }
+
+#news {
+    height: 660px;
+    background-color: #FFD24C;
+}
+
+#catalog {
+    height: 660px;
+    background-color: #7AB2B2;
+}
+
+#contact {
+    height: 660px;
+    background-color: #579BB1;
+}
+
 
 footer {
     height: 150px;
