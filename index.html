@@ -11,21 +11,11 @@
 </head>
 <body>
     <div class="navbarparent">
-        <div>
-        <h1>
-            test
-        </h1>
-        </div>
         <div class="navbar">
-            <a href="">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="">Project</a>
-            <a href="">Collab</a>
-        </div>
-        <div>
-        <h1>
-            test
-        </h1>
+            <a href="" onclick="smoothScroll(document.getElementById(''))">Home</a>
+            <a href="#contact" onclick="smoothScroll(document.getElementById('contact'))">Contact</a>
+            <a href="#project" onclick="smoothScroll(document.getElementById('project'))">Project</a>
+            <a href="#news" onclick="smoothScroll(document.getElementById('news'))">Collab</a>
         </div>
     </div>
     <header>
@@ -42,12 +32,9 @@
         </section>
     </header>
     <article>
-        <div id="next" onclick="smoothScroll(document.getElementById('profile'))">
-            <img src="Assets/target-arrow-down-unscreen.gif">
-        </div>
         <section id="profile"></section>
         <section id="news"></section>
-        <section id="catalog"></section>
+        <section id="collab"></section>
         <section id="contact"></section>
         <div>
             <main></main>
