@@ -1,4 +1,4 @@
-// Scroll screen by x when the gif is clicked 
+// Scroll screen by x when the something is clicked 
 window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
