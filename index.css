@@ -128,7 +128,8 @@ article {
 
 #profile {
     height: 660px;
-    background-color: #8b8d8f;
+    background-color: transparent;
+    /*background-color: #8b8d8f*/;
 }
 
 #news {
