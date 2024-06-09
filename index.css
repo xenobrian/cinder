@@ -135,16 +135,31 @@ article {
     padding: 32px;
 }
 
-#profile-container {
-    height: 70%;
+.profile-text {
+    margin-bottom: 32px;
+}
+
+#profile-card-container {
+    display: flex;
+    height: 80%;
     padding: 32px;
     box-sizing: border-box;
 }
 
 #profile-card {
     height: 100%;
-    width: 300px;
+    width: 40%;
     background-color: blue;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+
+#profile-subcard {
+    height: 100%;
+    width: 60%;
+    background-color: #FFD24C;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
 }
 
 #news {
