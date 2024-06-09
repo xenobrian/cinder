@@ -129,23 +129,23 @@ article {
 }
 
 #profile {
-    height: 660px;
+    height: 900px;
     background-color: transparent;
     /*background-color: #8b8d8f*/;
 }
 
 #news {
-    height: 660px;
+    height: 900px;
     background-color: #FFD24C;
 }
 
 #collab {
-    height: 660px;
+    height: 900px;
     background-color: #7AB2B2;
 }
 
 #contact {
-    height: 660px;
+    height: 900px;
     background-color: #579BB1;
 }
 
