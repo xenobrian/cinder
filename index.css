@@ -31,9 +31,10 @@ body {
     margin-right: 16px;
 }
 
-.navbarparent > .navbar {
+.navbar {
     background-color: rgba(43, 71, 94, 0.7);
     box-sizing: border-box; 
+    font-family: 'Louis George Cafe', sans-serif;
 
     margin: auto;
     padding: 0;    

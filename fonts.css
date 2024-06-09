@@ -1,0 +1,37 @@
+/* Louis George Cafe*/
+@font-face {
+    font-family: 'Louis George Cafe';
+    src: url(fonts/Louis\ George\ Cafe.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Louis George Cafe';
+    font-weight: bold;
+    src: url(fonts/Louis\ George\ Cafe\ Bold.ttf.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Louis George Cafe';
+    font-weight: bold;
+    font-style: italic;
+    src: url(fonts/Louis\ George\ Cafe\ Bold\ Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Louis George Cafe';
+    font-weight: lighter;
+    src: url(fonts/Louis\ George\ Cafe\ Light.ttf.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Louis George Cafe';
+    font-weight: lighter;
+    font-style: italic;
+    src: url(fonts/Louis\ George\ Cafe\ Light\ Italic.ttf.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Louis George Cafe';
+    font-style: italic;
+    src: url(fonts/Louis\ George\ Cafe\ Italic.ttf.ttf) format('truetype');
+}
