@@ -167,6 +167,29 @@ article {
     display: block;
 }
 
+.profile-info {
+    font-family: 'Red Hat Display', sans-serif;
+}
+.profile-info > p {
+    margin: auto;
+    width: 75%;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: smaller;
+}
+
+.profile-info > button {
+    margin: 64px auto 16px;
+    font-size: 1vw;
+
+    text-align: center;
+    padding: 14px 22px;
+    background-color: #57b157;
+    text-decoration: none;
+    border: none;
+    color: white;
+}
+
 .profile-subcard {
     height: 100%;
     width: 60%;
