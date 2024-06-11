@@ -11,6 +11,7 @@ body {
     height: fit-content;
     
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -152,6 +153,18 @@ article {
     background-color: blue;
     border-top-left-radius: 15%;
     border-bottom-left-radius: 15%;
+    
+    padding-top: 14vh;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card > img {
+    text-align: center;
+    height: 30%;
+    width: auto;
+    border-radius: 50%;
+    display: block;
 }
 
 .profile-subcard {
