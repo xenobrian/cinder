@@ -210,6 +210,10 @@ article {
     display: inline-block;
 }
 
+.profile-subcard > div > h1 {
+    margin: 0;
+}
+
 
 /* ARTICLE AND SECTIONS*/
 section {height: 900px;}
@@ -229,6 +233,15 @@ footer {
     background-color: #073B3A;
 }
 
+.small-text {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.9vw;
+    font-weight: light;
+    text-align: justify;
+    width: 80%;
+    margin: 8px auto 0;    
+}
+
 .big-text {
     font-size: 42px;
 }
@@ -236,4 +249,9 @@ footer {
 .intro {
     margin: 0;
     line-height: 1.6;
+}
+
+.expertise {
+    box-sizing: border-box;
+    padding: 16px;
 }
