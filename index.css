@@ -152,8 +152,7 @@ article {
     height: 100%;
     width: 40%;
     background-color: blue;
-    border-top-left-radius: 15%;
-    border-bottom-left-radius: 15%;
+    border-radius: 15%;
     
     text-align: center;
     padding-top: 12vh;
