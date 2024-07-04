@@ -33,7 +33,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(43, 71, 94, 0.7);
+    background-color: #fffcc77e;
     box-sizing: border-box; 
     font-family: 'Louis George Cafe', sans-serif;
 
@@ -112,6 +112,7 @@ header > section > main, aside {
     width: 50%;
     height: inherit;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
@@ -120,8 +121,17 @@ header > section > main, aside {
 }
 
 header > section > main > h1 {
-    font-size: 4.5em;
+    width: 420px;
+    font-size: 3.5em; /*56px*/
     text-align: left;
+    margin: 0 0 0 0;
+}
+
+header > section > main > p {
+    font-size: smaller;
+    text-align: justify;
+    width: 420px;
+    height: fit-content;
 }
 
 article {
@@ -132,7 +142,7 @@ article {
 
 #profile {
     height: 1000px;
-    background-color: #EEF7FF;
+    background-color: #A2A569;
     /*background-color: #8b8d8f*/;
     padding: 32px;
 }
@@ -143,25 +153,29 @@ article {
 
 .profile-card-container {
     display: flex;
-    height: 80%;
+    height: 80%; /*800px*/
     padding: 32px;
     box-sizing: border-box;
 }
 
 .profile-card {
-    height: 100%;
+    max-height: 100%;
     width: 40%;
-    background-color: blue;
+    background-color: #B0AA7E;
     border-radius: 15%;
     
-    text-align: center;
-    padding-top: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     box-sizing: border-box; 
 }
 
 .profile-card > img {
-    margin: auto auto 32px;
-    height: 30%;
+    /*margin: auto auto 32px;*/
+    align-self: center;
+    height: 32%;
     width: auto;
     border-radius: 50%;
     display: block;
@@ -169,7 +183,6 @@ article {
 
 .profile-info {
     font-family: 'Red Hat Display', sans-serif;
-    height: 50%;
 }
 
 .profile-info > p {
@@ -180,16 +193,8 @@ article {
     font-size: smaller;
 }
 
-.profile-card button {
-    margin: auto 16px;
-    font-size: 1vw;
-
+.profile-info > h1 {
     text-align: center;
-    padding: 14px 22px;
-    background-color: #57b157;
-    text-decoration: none;
-    border: none;
-    color: white;
 }
 
 .profile-subcard {
@@ -200,15 +205,18 @@ article {
     /*display: flex;
     justify-content: center;*/
     text-align: center;
-    background-color: #ececec;
 }
 
-.profile-subcard > div {
+.expertise {
+    transform: scale(0.9);
     margin: 24px;
     height: 42%;
     width: 38%;
-    background-color: red;
+    background-color: #F3E5AB;
     display: inline-block;
+    border-top-left-radius: 18px; 
+    border-top-right-radius: 18px;
+    box-shadow: 0px 8px 18px rgba(187, 187, 187, 0.788);
 }
 
 .profile-subcard > div > h1 {
@@ -217,7 +225,7 @@ article {
 
 
 /* ARTICLE AND SECTIONS*/
-section {height: 900px; text-align: center;}
+section {height: 900px;}
 #news {background-color: #FFD24C; box-sizing: border-box;}
 #news > * {box-shadow: border-box;}
     .news-header-container {
@@ -225,7 +233,7 @@ section {height: 900px; text-align: center;}
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;    
+        align-items: center;   
     }
 
     .news-header-container h1 {
@@ -291,7 +299,7 @@ section {height: 900px; text-align: center;}
     }
 
 #collab {background-color: #073B3A;}
-#testimony {background-color: #086E4F; height: 4500px;}
+#testimony {background-color: #086E4F; height: 900px;}
 #office {background-color: transparent; position: relative; height: 750px; overflow: hidden;}
     #office > img {position: absolute; width: 100%; height: 100%; top: 0; right: 0; bottom: 0; left: 0;}
     #office > div {position: relative; width: 100%; height: inherit; margin: 0; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.8); display: flex;}
