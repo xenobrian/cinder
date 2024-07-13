@@ -167,8 +167,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
+        
     box-sizing: border-box; 
 }
 
@@ -179,6 +178,17 @@ article {
     width: auto;
     border-radius: 50%;
     display: block;
+}
+
+.socmed {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.socmed img {
+    width: 40px;
+    height: 40px;
 }
 
 .profile-info {
