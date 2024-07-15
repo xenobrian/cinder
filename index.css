@@ -167,7 +167,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-        
+
     box-sizing: border-box; 
 }
 
@@ -182,8 +182,9 @@ article {
 
 .socmed {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-self: center;
+    width: 180px;
 }
 
 .socmed img {
@@ -193,6 +194,7 @@ article {
 
 .profile-info {
     font-family: 'Red Hat Display', sans-serif;
+    margin-bottom: 32px;
 }
 
 .profile-info > p {
