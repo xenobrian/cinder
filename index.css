@@ -84,13 +84,23 @@ header {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    position: relative;
+
+}
+
+header > div {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: inherit;
 }
 
 header > video {
-    min-height: inherit;
-    min-width: 100%;
+    height: 100%;
+    width: 100%;
+    /* min-height: inherit;
+    min-width: 100%; */
     position: absolute;
+    object-fit: cover;
     top: 0;
     bottom: 0;
     left: 0;
@@ -119,7 +129,7 @@ header > section > main, aside {
     font-family: "Montserrat", sans-serif;
 }
 
-header > section > main > h1 {
+header section > main > h1 {
     width: 420px;
     font-size: 3.5em; /*56px*/
     text-align: left;
@@ -139,7 +149,12 @@ article {
     width: inherit;
     height: fit-content;
     min-width: 100%;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: grey;
+    background-image: url("Assets/desktop-wallpaper-nordic-kde-winter-nordic.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 section {
@@ -201,8 +216,8 @@ section {
 }
 
 .project main figure {
-    width: 90%;
-    height: 450px;
+    width: 682px;/* width: 612px;90% of 680px */
+    height: 405px;/* 90% of 450px */
     background-color: rgb(171, 203, 204);
     position: relative;
     /* transform: scale(0.9); */
@@ -242,20 +257,32 @@ section {
 .project aside > div {
     width: 100%;
     height: 50%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: flex;
     flex-direction: row;
 }
 
 .project aside .project-cards-container {
-    display: grid;
-    /* align-items: center;
-    justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 32px;
 }
 
-.project aside .project-cards-container div.project-cards figure {
-    width: 128px;
-    height: 128px;
+.project aside .project-cards-container .project-cards {
+    width: 444px;
+    height: 436px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.project aside .project-cards-container .project-cards figure {
+    width: 140px;
+    height: 140px;
     background-color: white;
 }
 
@@ -281,22 +308,22 @@ section {
 
 .project aside .autoslide-ancestor .autoslide-parent div.autoslide {
     width: 170px;
-    height: 320px;
+    height: 360px;
     background-color: #EEF7FF;
     /* display: flex; */
 }
 
 .project aside .autoslide-ancestor .autoslide-parent div.autoslide:first-child {
-    margin-right: 20px;
+    margin-right: 1vw;
 }
 
 .project aside .autoslide-ancestor .autoslide-parent div.autoslide:last-child {
-    margin-left: 20px;
+    margin-left: 1vw;
 }
 
 div.autoslide {
     display: flex;
-    border-radius: 12px;
+    border-radius: 6px;
     flex-direction: column;
     overflow-y: scroll;
 }
@@ -304,4 +331,73 @@ div.autoslide {
 div.autoslide img {
     max-width: 100%;
     margin: 0;
+}
+
+section.contact {
+    background-color: #dddddd;
+}
+
+#popup {
+    width: 960px;
+    height: 360px;
+    background-color: red;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    transform: scale(0.8);
+    align-self: center;
+}
+
+#popup-main {
+    width: 35%;
+    height: inherit;
+}
+
+#popup-main > img {
+    width: 100%;
+    height: 100%;
+}
+
+#popup-aside {
+    width: 65%;
+    height: inherit;
+    padding: 32px 0px 32px 24px;
+    background-color: #342E37;
+    color: white;
+    display: inline-block;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    box-sizing: border-box;
+}
+
+#popup-aside > h1 {
+    font-size: 1.2em;
+}
+
+#popup-aside > p {
+    font-size: medium;
+    font-weight: 300;
+    width: 90%;
+}
+
+#popup-aside > button {
+    /* width: 96px;
+    height: 36px; */
+    padding: 12px 18px;
+    background-color: lightblue;
+    color: rgb(43, 119, 77);
+    border: none;
+}
+
+
+#popup-aside > hr {
+    border: none;
+    height: 2px;
+    background-color: #fff;
+    /* text-align: ; */
+    width: 90%;
+    margin-left: 0px;
+    /* margin: 20px auto; */
 }
