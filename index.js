@@ -16,7 +16,7 @@ const popup = document.querySelector("#popup");
 const button = document.querySelector("#klik")
 const exit = document.querySelector("#exit");
 
-// popup.style.display = "none"
+const waiting = setTimeout(showPopup, 5000)
 
 function showPopup() {
     popup.style.display = "flex"
