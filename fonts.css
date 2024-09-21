@@ -35,3 +35,14 @@
     font-style: italic;
     src: url(fonts/Louis\ George\ Cafe\ Italic.ttf.ttf) format('truetype');
 }
+
+/* Tenada */
+@font-face {
+    font-family: 'Tenada';
+    src: url(fonts/Tenada.ttf);
+}
+
+@font-face {
+    font-family: 'Paradise Silhouette';
+    src: url(fonts/ParadiseSilhouette.ttf);
+}
