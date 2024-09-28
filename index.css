@@ -165,7 +165,7 @@ section {
 /* INTRO */
 #intro {
     height: fit-content;
-    padding: 128px 128px;
+    padding: 156px 128px;
     color: white;
     background-color: #0E100F;
     box-sizing: border-box;
@@ -215,7 +215,7 @@ section {
 /* PROFILE */
 section#profile {
     height: 940px;
-    background-color: #fcfcfc;/*#EEF7FF  */
+    background: #fcfcfc url("https://img.freepik.com/premium-photo/marble4_707519-15473.jpg?w=900"); /*#EEF7FF  */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,14 +231,14 @@ section#profile {
 
 #profile-welcome > h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 }
 
 #profile-welcome > p {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
 }
@@ -249,10 +249,10 @@ section#profile {
     height: 500px;
     padding: 0px 12px 0px 96px;
     display: flex;
-    border-block: 1.5px solid red;
+    border-block: 3px solid red;
     writing-mode: horizontal-tb;
     border-radius: 2rem;
-    background-color: #395a7f;
+    background-color: #13273d8e; /* #395a7f */
     box-sizing: border-box;
 }
 
@@ -294,6 +294,31 @@ section#profile {
 #profile-box > aside > img {
     width: 275px;
     height: auto;
+}
+
+/* SPECIALITY */
+section#specialty {
+    height: 2400px;
+}
+
+section#specialty > section:first-child {
+    background-color: #124559;
+}
+
+section#specialty > section:nth-child(2) {
+    display: flex;
+}
+
+section#specialty > section:nth-child(2) > main {
+    background-color: #01161E;
+    width: 30%;
+    height: inherit;
+}
+
+section#specialty > section:nth-child(2) > aside {
+    background-color: #EEF6E0;
+    width: 70%;
+    height: inherit;
 }
 
 /* PROJECTS */
