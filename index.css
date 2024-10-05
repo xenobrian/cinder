@@ -5,6 +5,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h1 {
+    margin: 0;
+}
+
 .navbarparent {
     width: 100%;
     padding-top: 20px;
@@ -95,6 +99,19 @@ header > div {
 }
 
 header > video {
+    height: 100%;
+    width: 100%;
+    /* min-height: inherit;
+    min-width: 100%; */
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header > img {
     height: 100%;
     width: 100%;
     /* min-height: inherit;
@@ -296,13 +313,51 @@ section#profile {
     height: auto;
 }
 
+/* EDU */
+section#edu {
+    width: 100%;
+    height: 900px;
+    background-color: #1a6b8b;
+    /* position: absolute; */
+}
+
+#edu-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-grow: 0;
+    flex-direction: column;
+}
+
+.edu-bg {
+    width: inherit;
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+
 /* SPECIALITY */
 section#specialty {
     height: 2400px;
 }
 
 section#specialty > section:first-child {
-    background-color: #124559;
+    height: 768px;
+    background-color: #001B2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+}
+
+section#specialty > section:first-child > h1 {
+    width: 1080px;
+    color: #EEF7FF;
+    font-size: 96px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 
 section#specialty > section:nth-child(2) {
